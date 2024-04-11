@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import  React, {useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
+import Content from './Content.js';
+
+import './Navbar.js'
+import Navbar from './Navbar.js';
+import Skils from './Skils.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Projects from './Projects.js';
+import Contact from './Contact.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Navbar />
+      <Content />
+      <Skils />
+      <Projects />
+      <Contact />
+      </div>
   );
 }
 

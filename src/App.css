@@ -1,38 +1,238 @@
 .App {
-  text-align: center;
+  scroll-behavior: smooth;
+  background-color: #FFFAFA;
+}
+.navbar-link {
+  list-style-type: none;
+  flex-direction: row;
+  display: flex;
+  margin-left: 35em;
+  font-size: large;
+  font-weight: bold;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-icon {
+  background-color: whitesmoke;
+  width: 50px;
+  height: 70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-link li {
+  display: flex;
+  padding: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-link a {
+  text-decoration: none;
+  color: midnightblue;
+}
+
+.skils-details {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.profile-details {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 40vh; /* adjuested for mobile */
+    padding: 10px;
+    scroll-behavior: smooth;
+    margin-left: 55px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(max-width: 767px) {
+  .profile-details {
+    height: auto;
+    margin-left: 0;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar-link {
+    /* flex-direction: column; */
+    margin: 0;
+    padding: 0;
+    font-size: medium;
   }
 }
+
+.profile-details h1 {
+  font-size: 45px;
+  font-family: Cormorant SC,serif;
+}
+
+.profile-details p {
+  font-size: 18px;  /* adjuested for mobile */
+  width: 100%;
+  text-wrap: wrap;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.skil-section1 {
+  display: block;
+}
+
+.skils-details li a {
+  text-decoration: none;
+}
+
+blackquote {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #333;
+}
+
+h2 {
+  font-size: 35px; /* adjuested for mobile */
+}
+
+#file1 {
+  accent-color: #00BFFF;
+}
+#file2 {
+  accent-color: #00008B;
+}
+#file3 {
+  accent-color: #0000FF;
+}
+#file4 {
+  accent-color: grey;
+}
+#file5 {
+  accent-color: #CCCCCC;
+}
+
+
+
+.profile-details h6 {
+  font-size: 22px; /* Adjusted for mobile */
+  font-weight: 500;
+  color: darkorchid;
+}
+
+.profile-details {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em; /* Adjusted for mobile */
+}
+
+.container {
+  margin-top: 1em;
+  margin-left: 1em; /* Adjusted for mobile */
+  height: auto; /* Adjusted for mobile */
+  padding: 15px;
+}
+
+progress {
+  accent-color: lightslategrey
+}
+
+progress[value] {
+  width: 100%; /* Adjusted for mobile */
+  height: 25px;
+}
+
+
+
+.skils-title {
+  text-align: center;
+  font-style: italic;
+}
+
+.profile-icon ul {
+  display: flex;
+
+}
+
+.profile-icon li {
+
+  margin-right: 5px; /* Adjusted for mobile */
+  list-style-type: none;
+
+  background-color: lightskyblue;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  text-align: center;
+  
+  border-radius: 50%;
+}
+
+.project-details {
+  /* background-color: #f8f5fb; */
+  margin-left: 2rem;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-top: 5em;
+}
+
+.profile-details h2 {
+  text-align: center;
+  font-size: 54px;
+}
+
+.project-details h2 {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-style: italic;
+}
+
+.card {
+  width: 100%; /* Adjusted for mobile */
+  height: auto;
+  padding: 10px;
+  margin-left: 1em 0;
+
+}
+
+.contact-details h2 {
+ 
+  margin-top: 2em;  /* Adjusted for mobile */
+  text-align: center;
+
+}
+
+.contact-details {
+  padding: 1em; /* Adjusted for mobile */
+  width: 100%; /* Adjusted for mobile */
+  margin-left: 0; /* Adjusted for mobile */
+  
+}
+
+.form-group {
+  padding: 15px;
+  width: 100%;
+}
+
+
+
+/* @keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%)
+  }
+  100% {
+    transform: translateX(-100%)
+  }
+}
+
+.profile-text {
+  overflow: hidden;
+}
+
+.profile-text {
+  animation: moveRightToLeft 5s linear;
+  animation-iteration-count: 1;
+} */
+
+/* .animated .profile-text {
+  animation-play-state: running;
+ 
+} */
+
